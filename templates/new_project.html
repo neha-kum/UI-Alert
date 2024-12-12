@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/new_project.css">
+    <title>New Project</title>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="mainCnt">
+
+        <!-- Left Hand Side -->
+        <div class="lhs d-flex align-items-center justify-content-center">
+            <!-- LHS Content -->
+            <div class="image-container" id="imageContainer">
+                <div class="row" id="imageGrid"></div>
+            </div>
+
+            <div class="upload-container">
+                <label for="imageUpload" class="custom-file-upload">
+                    Upload Images
+                </label>
+                <input type="file" id="imageUpload" multiple accept="image/*" />
+            </div>
+
+            <div class="action-buttons" id="actionButtons">
+                <button class="btn btn-primary" id="addMoreImages">Add More Images</button>
+                <button class="btn btn-danger" id="removeAll">Remove All</button>
+                <button class="btn btn-success" id="generateMask">Generate Mask</button>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Right Hand Side -->
+        <div class="rhs d-flex align-items-center justify-content-center">
+
+            <!-- Mask Container for the RHS -->
+            <div class="mask-container" id="maskContainer">
+                <div class="row" id="maskGrid"></div>
+            </div>
+
+            <!-- Displaying Message Container -->
+            <div class="message-container text-center">
+                <p id="message">Please upload at least one image to continue.</p>
+
+                <!-- Loading screen -->
+                <div class="loading-screen" id="loadingScreen" style="display: none;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RHS Action Buttons -->
+            <div class="rhs-action-buttons" id="rhsActionButtons" style="display: none;">
+                <button class="btn btn-success" id="saveMask">Save Mask</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- dialogue-box for saving mask -->
+    <div id="dialogueBox" class="dialogue-box" style="display: none;">
+        <h2>Enter Project Name</h2>
+        <input type="text" id="projectNameInput" placeholder="Project Name" />
+        <button id="submitProjectName">Submit</button>
+    </div>
+
+
+
+    <!-- Back Button -->
+    <a href="javascript:history.back()" class="btn btn-secondary back-button">Back</a>
+
+    <script src="/static/new_project.js"></script>
+</body>
+
+</html>

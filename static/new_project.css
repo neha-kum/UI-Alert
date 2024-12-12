@@ -1,0 +1,142 @@
+.divider {
+    width: 2px;
+    background-color: #ccc;
+    height: 100%;
+}
+
+.mainCnt {
+    display: flex;
+    height: 100vh;
+}
+
+.lhs,
+.rhs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.lhs {
+    background-color: #f8f9fa;
+    height: 100%;
+}
+
+.rhs {
+    background-color: #e9ecef;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.image-container,
+.mask-container {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: none;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.row {
+    margin: 0;
+    gap: 5px;
+}
+
+.col-2 {
+    padding: 0;
+    /* Remove extra padding */
+}
+
+.col-2 img {
+    display: block;
+    width: 100%;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+.action-buttons,
+.rhs-action-buttons {
+    display: none;
+    height: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.action-buttons button,
+.rhs-action-buttons button {
+    margin: 10px;
+}
+
+.upload-container {
+    margin-bottom: 20px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.dialogue-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 20px 30px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.dialogue-box h2 {
+    margin-bottom: 20px;
+    color: #4a90e2;
+    font-size: 18px;
+}
+
+.dialogue-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.dialogue-box button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dialogue-box button:hover {
+    background-color: #357abd;
+}

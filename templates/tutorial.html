@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <style>
+        :root {
+            --primary-color: #6c63ff;
+            --bg-color: #f4f4f4;
+            --text-color: #222;
+            --light-color: #fff;
+            --gray-color: #555;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+        .header p {
+            color: var(--gray-color);
+        }
+        .tutorial-section {
+            margin-bottom: 20px;
+            background: var(--light-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            padding: 20px;
+        }
+        .tutorial-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .tutorial-section p {
+            margin: 10px 0;
+            color: var(--gray-color);
+            line-height: 1.6;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: var(--light-color);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+        }
+        .back-button:hover {
+            background-color: #5548c8;
+        }
+        .tips {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e0e7ff;
+            border-left: 5px solid var(--primary-color);
+        }
+        .tips p {
+            margin: 0;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to the Tutorial Page</h1>
+            <p>Learn how to make the most of our project dashboard and tools.</p>
+        </div>
+
+        <!-- Tutorial Section 1 -->
+        <div class="tutorial-section">
+            <h2>Step 1: Adding a New Project</h2>
+            <p>Navigate to the main dashboard and click on the <strong>"Add New Project"</strong> button. Fill in the project details such as title, description, and status. Save the project to see it listed on the dashboard.</p>
+        </div>
+
+        <!-- Tutorial Section 2 -->
+        <div class="tutorial-section">
+            <h2>Step 2: Editing an Existing Project</h2>
+            <p>Click the <strong>"Edit"</strong> button on the project card you want to update. Modify the necessary details and save your changes. The updated details will appear instantly on the dashboard.</p>
+        </div>
+
+        <!-- Tutorial Section 3 -->
+        <div class="tutorial-section">
+            <h2>Step 3: Deleting a Project</h2>
+            <p>If a project is no longer required, click the <strong>"Delete"</strong> button on the respective project card. Confirm the action, and the project will be permanently removed.</p>
+            <div class="tips">
+                <p>Tip: Be careful while deleting projects as this action is irreversible!</p>
+            </div>
+        </div>
+
+        <!-- Tutorial Section 4 -->
+        <div class="tutorial-section">
+            <h2>Step 4: Navigating to Tutorials</h2>
+            <p>To revisit this page, click on the <strong>"Tutorials"</strong> link in the navigation menu. Use this page to review features and enhance your understanding of the platform.</p>
+        </div>
+
+        <!-- Back to Dashboard Button -->
+        <a href="dashboard.html" class="back-button">Back to Dashboard</a>
+    </div>
+</body>
+</html>
