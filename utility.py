@@ -1,5 +1,4 @@
 # Libraries
-'''
 import os
 import cv2
 import csv
@@ -349,7 +348,3 @@ def load_prev_imgs_masks(file_names, image_dir, mask_dir):
         index+=1
         
     return mask_paths, og_masks, og_images
-
-
-
-'''

@@ -1,5 +1,3 @@
-
-'''
 import os
 import cv2
 import shutil
@@ -383,6 +381,3 @@ def detect_changes_in_masks(file_names, project_name, upload_dir, model, alert_t
             IR_REMOVEDs.append(ir_removed)
 
     return FILEs, TIRs, IR_NEWs, IR_REMOVEDs
-
-    
-    '''

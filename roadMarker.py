@@ -1,5 +1,4 @@
 # Import necessary libraries
-'''
 import os
 import shutil
 from twilio.rest import Client
@@ -259,7 +258,3 @@ class RoadManager:
     def start_view_manager(self):
         view_manager = ViewManager(self.database_path, self.generated_masks_path, self.detected_alerts_path)
         view_manager.start()
-
-
-
-'''

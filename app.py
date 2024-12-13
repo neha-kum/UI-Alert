@@ -1,4 +1,3 @@
-'''
 import shutil
 from glob import glob
 from UIUtility import *
@@ -236,4 +235,3 @@ def clear_alerts():
 
 if __name__ == '__main__':
     app.run(debug=True)
-'''
